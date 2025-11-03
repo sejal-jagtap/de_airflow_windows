@@ -48,9 +48,42 @@ This project and its Docker Compose configuration are tailored to run Airflow an
         docker compose up
 
 
-4. Access Airflow UI via [http://localhost:8082](http://localhost:8082).
+
+4. Access Airflow UI via [http://localhost:8080](http://localhost:8080).
 
 5. Trigger the `movies_pipeline` DAG manually to run the pipeline.
+
+## Running Queries in PostgreSQL through VS Code
+
+You can interact with the PostgreSQL database directly from Visual Studio Code using the official PostgreSQL extension:
+
+1. **Install PostgreSQL Extension:**
+
+- Open VS Code.
+- Press `Ctrl + Shift + X` to open Extensions.
+- Search for **PostgreSQL** by Microsoft and install it.
+
+2. **Add a Connection:**
+
+- Click the elephant icon on the sidebar to open the PostgreSQL extension view.
+- Click the **Add Connection** button.
+- Enter connection details:
+  - Hostname: `localhost`
+  - Port: `5432`
+  - Database: `airflow` (or the name used in your setup)
+  - Username: `airflow`
+  - Password: `airflow`
+- Save the connection.
+
+3. **Run SQL Queries:**
+
+- Open the Command Palette with `Ctrl + Shift + P`.
+- Search and select **PostgreSQL: New Query**.
+- Choose your connection.
+- Enter SQL queries in the editor and run them.
+- View query results directly within VS Code.
+
+This allows seamless database management without leaving your code editor.
 
 ## Important Notes
 
