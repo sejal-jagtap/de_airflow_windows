@@ -4,6 +4,11 @@
 
 This repository contains an Apache Airflow project that implements an ETL pipeline to ingest, transform, and load movie data into a PostgreSQL database. It processes raw movie and ratings CSV files, merges the data, loads it into the database, and runs analysis queries.
 
+## Disclaimer
+
+**NOTE: This is a Windows setup.**  
+This project and its Docker Compose configuration are tailored to run Airflow and related services on a Windows environment, utilizing Docker Desktop with Windows-specific considerations.
+
 ## Repository Structure
 
 - `dags/`: Contains Airflow DAGs including the main `movies_pipeline.py`.
