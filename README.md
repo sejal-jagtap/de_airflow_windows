@@ -121,6 +121,22 @@ This allows seamless database management without leaving your code editor.
 - Manage configurations in `config/` (locally only).
 - Monitor Airflow tasks and logs via the Web UI.
 
+## Airflow UI
+
+<img width="944" height="459" alt="dag_1" src="https://github.com/user-attachments/assets/3a63681f-2fa3-413c-a193-33d982b0bd71" />
+
+<img width="955" height="467" alt="dag_2" src="https://github.com/user-attachments/assets/07969e2e-5b56-4031-b410-7844dbac7a10" />
+
+<img width="959" height="474" alt="dag_4" src="https://github.com/user-attachments/assets/f322d387-3a04-4467-b9d4-a536746d7703" />
+
+<img width="958" height="447" alt="dag_5" src="https://github.com/user-attachments/assets/32bcc97f-2abe-4f04-b213-c33da0ead0fb" />
+
+<img width="947" height="450" alt="dag_pipeline" src="https://github.com/user-attachments/assets/3668836e-4f59-45e1-8767-34f60c69e3db" />
+
+## Docker Desktop
+
+<img width="959" height="506" alt="docker_dag" src="https://github.com/user-attachments/assets/2bf065ec-9734-4c86-af4c-47955458aa70" />
+
 ## License
 
 This project is licensed under the MIT License.
