@@ -7,7 +7,7 @@ This repository contains an Apache Airflow project that implements an ETL pipeli
 ## Disclaimer
 
 **NOTE: This is a Windows setup.**  
-This project and its Docker Compose configuration are tailored to run Airflow and related services on a Windows environment, utilizing Docker Desktop with Windows-specific considerations.
+This project and its Docker Compose configuration are designed to run Airflow and related services on a Windows environment, utilizing Docker Desktop with specific Windows considerations.
 
 ## Repository Structure
 
@@ -70,6 +70,9 @@ This project and its Docker Compose configuration are tailored to run Airflow an
 4. Access Airflow UI via [http://localhost:8082](http://localhost:8082).
 
 5. Trigger the `movies_pipeline` DAG manually to run the pipeline.
+
+Note: Refer to the link below for setup
+https://pitch-thing-f55.notion.site/Alternative-Deployments-2a09cdcc00ad801ba74efdc91847862e
 
 ## Docker Desktop
 
