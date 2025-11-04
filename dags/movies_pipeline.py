@@ -5,11 +5,10 @@ from datetime import datetime
 import pandas as pd
 import os
 import psycopg2
-
+import matplotlib.pyplot as plt
 
 DATA_DIR = '/opt/airflow/data/raw/'
 TMP_DIR = '/opt/airflow/data/tmp/'
-
 
 with DAG('movies_pipeline',
          start_date=datetime(2023, 1, 1),
@@ -101,7 +100,38 @@ with DAG('movies_pipeline',
         conn.close()
 
     @task
+    def generate_visualizations():
+        conn = psycopg2.connect(
+            host='postgres',
+            dbname='airflow',
+            user='airflow',
+            password='airflow'
+        )
+        query = """
+        SELECT title, AVG(rating) AS avg_rating
+        FROM movies_ratings
+        GROUP BY title
+        ORDER BY avg_rating DESC
+        LIMIT 10;
+        """
+        df = pd.read_sql(query, conn)
+        conn.close()
+
+        plt.figure(figsize=(12, 6))
+        plt.barh(df['title'], df['avg_rating'], color='skyblue')
+        plt.xlabel('Average Rating')
+        plt.title('Top 10 Movies by Average Rating')
+        plt.gca().invert_yaxis()
+
+        output_path = os.path.join(TMP_DIR, 'top_10_movies_rating.png')
+        plt.savefig(output_path)
+        plt.close()
+
+        return output_path
+
+    @task
     def cleanup():
+        # Clean only CSV files, keep the visualization image
         for file in ['movies_clean.csv', 'ratings_clean.csv', 'merged_data.csv']:
             try:
                 os.remove(os.path.join(TMP_DIR, file))
@@ -125,6 +155,7 @@ with DAG('movies_pipeline',
     merged = merge_data(movies_clean, ratings_clean)
     load = load_to_postgres(merged)
     analyze = analysis()
+    visualize = generate_visualizations()
     clean = cleanup()
 
-    tg >> merged >> load >> analyze >> clean
+    tg >> merged >> load >> analyze >> visualize >> clean
