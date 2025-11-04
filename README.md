@@ -11,7 +11,26 @@ This project and its Docker Compose configuration are tailored to run Airflow an
 
 ## Repository Structure
 
-- `dags/`: Contains Airflow DAGs including the main `movies_pipeline.py`.
+        de_airflow_windows
+        |-- README.md
+        |-- config
+        |   `-- airflow.cfg
+        |-- dags
+        |   |-- __pycache__
+        |   `-- movies_pipeline.py
+        |-- data
+        |   |-- raw
+        |   `-- tmp
+        |-- db.env
+        |-- docker-compose.yml
+        |-- logs
+        |   |-- dag_id=movies_pipeline
+        |   `-- dag_processor
+        |-- plugins
+        `-- requirements.txt
+
+
+- `dags/`: Contains Airflow DAGs, including the main `movies_pipeline.py`.
 - `data/raw/`: Raw CSV files (`movies.csv` and `ratings.csv`).
 - `config/`: Airflow configuration files — **do not commit sensitive files here**.
 - Docker and other setup files for running Airflow and PostgreSQL in containers.
@@ -48,8 +67,7 @@ This project and its Docker Compose configuration are tailored to run Airflow an
         docker compose up
 
 
-
-4. Access Airflow UI via [http://localhost:8080](http://localhost:8080).
+4. Access Airflow UI via [http://localhost:8082](http://localhost:8082).
 
 5. Trigger the `movies_pipeline` DAG manually to run the pipeline.
 
@@ -85,12 +103,16 @@ You can interact with the PostgreSQL database directly from Visual Studio Code u
 
 This allows seamless database management without leaving your code editor.
 
-## Important Notes
+<img width="562" height="260" alt="dag_q1" src="https://github.com/user-attachments/assets/aca7a6c2-3536-485b-8efb-14be45fe3f54" />
 
-- Avoid committing sensitive information like the Fernet key in `config/airflow.cfg`.
-- Use `.gitignore` to exclude the `config/` directory.
-- If secrets were pushed accidentally, rotate keys and clean git history.
-- Make sure data folders are properly mounted for containers.
+<img width="584" height="281" alt="dag_q2" src="https://github.com/user-attachments/assets/564036ce-c6f1-4332-bfc8-ea483b1405a3" />
+
+<img width="569" height="272" alt="dag_q3" src="https://github.com/user-attachments/assets/5209698d-d9c2-450f-9371-f2c8add5d41d" />
+
+<img width="554" height="265" alt="dag_q4" src="https://github.com/user-attachments/assets/3be2e4ba-32b1-46c3-aeee-0ef6511b7c42" />
+
+<img width="550" height="224" alt="dag_q5" src="https://github.com/user-attachments/assets/047e2be7-a192-454f-875c-7add5d02677d" />
+
 
 ## Usage
 
