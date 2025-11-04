@@ -105,7 +105,7 @@ You can interact with the PostgreSQL database directly from Visual Studio Code u
 - Enter connection details:
   - Hostname: `localhost`
   - Port: `5432`
-  - Database: `airflow` (or the name used in your setup)
+  - Database: `airflow` 
   - Username: `airflow`
   - Password: `airflow`
 - Save the connection.
