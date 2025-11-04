@@ -107,7 +107,7 @@ This allows seamless database management without leaving your code editor.
 
 <img width="584" height="281" alt="dag_q2" src="https://github.com/user-attachments/assets/564036ce-c6f1-4332-bfc8-ea483b1405a3" />
 
-<img width="569" height="272" alt="dag_q3" src="https://github.com/user-attachments/assets/5209698d-d9c2-450f-9371-f2c8add5d41d" />
+<img width="562" height="260" alt="dag_q3" src="https://github.com/user-attachments/assets/5209698d-d9c2-450f-9371-f2c8add5d41d" />
 
 <img width="554" height="265" alt="dag_q4" src="https://github.com/user-attachments/assets/3be2e4ba-32b1-46c3-aeee-0ef6511b7c42" />
 
