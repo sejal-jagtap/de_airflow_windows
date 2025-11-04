@@ -118,6 +118,12 @@ You can interact with the PostgreSQL database directly from Visual Studio Code u
 - Enter SQL queries in the editor and run them.
 - View query results directly within VS Code.
 
+OR
+
+Run the command below in bash:
+
+        docker exec -it de_airflow_windows-postgres-1 psql -U airflow -d airflow
+
 This allows seamless database management without leaving your code editor.
 
 <img width="562" height="260" alt="dag_q1" src="https://github.com/user-attachments/assets/aca7a6c2-3536-485b-8efb-14be45fe3f54" />
