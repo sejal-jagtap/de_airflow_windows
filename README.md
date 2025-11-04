@@ -82,13 +82,14 @@ https://pitch-thing-f55.notion.site/Alternative-Deployments-2a09cdcc00ad801ba74e
 
 <img width="944" height="459" alt="dag_1" src="https://github.com/user-attachments/assets/3a63681f-2fa3-413c-a193-33d982b0bd71" />
 
-<img width="955" height="467" alt="dag_2" src="https://github.com/user-attachments/assets/07969e2e-5b56-4031-b410-7844dbac7a10" />
+<img width="958" height="467" alt="image" src="https://github.com/user-attachments/assets/ae4f4142-be53-46a4-bde4-fb05bcb3503f" />
 
-<img width="959" height="474" alt="dag_4" src="https://github.com/user-attachments/assets/f322d387-3a04-4467-b9d4-a536746d7703" />
+<img width="959" height="477" alt="image" src="https://github.com/user-attachments/assets/cf599a25-51b4-4dc2-aa8d-41ec1660569f" />
 
-<img width="958" height="447" alt="dag_5" src="https://github.com/user-attachments/assets/32bcc97f-2abe-4f04-b213-c33da0ead0fb" />
+<img width="959" height="471" alt="image" src="https://github.com/user-attachments/assets/20ca0245-59de-4668-a655-5657db9c9749" />
 
-<img width="947" height="450" alt="dag_pipeline" src="https://github.com/user-attachments/assets/3668836e-4f59-45e1-8767-34f60c69e3db" />
+<img width="959" height="470" alt="image" src="https://github.com/user-attachments/assets/5783f733-0044-4222-be06-1907f2ebfc4e" />
+
 
 
 ## Running Queries in PostgreSQL through VS Code
